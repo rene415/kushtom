@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icon.png",
+        "source": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/src/main/res/drawable-xxhdpi/icon.png"
+    },
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi/background.png",
+        "source": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/src/main/res/drawable-xxhdpi/background.png"
+    },
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi/logo.png",
+        "source": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/src/main/res/drawable-xxhdpi/logo.png"
+    }
+]

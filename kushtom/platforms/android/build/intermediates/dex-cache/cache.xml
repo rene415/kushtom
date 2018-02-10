@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/justc/.android/build-cache/3b9ccf63883963d159de4a0e6d0fecfe43955743/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="746274223beb11b1cda7854d7eec3038695c2c93">
+        <dex dex="/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/pre-dexed/debug/classes_4ffaa836dfd3159010deb2d9f31dacaede303f42.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/justc/.android/build-cache/d61c2c7fe668836a78b92ebf80cd22263fdb3a5b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="dd431d6aa9ce9dc0d429fcd239d412a82ea0e9a7">
+        <dex dex="/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/pre-dexed/debug/classes_0a9efe3dba714567063c08dbadf01aaa1afce66c.jar" />
+    </item>
+
+</items>

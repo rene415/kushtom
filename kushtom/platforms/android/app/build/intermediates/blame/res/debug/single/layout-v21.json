@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/justc/.android/build-cache/ec46c823255d6a5b8ddb87600b76eace9680625c/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/justc/.android/build-cache/ec46c823255d6a5b8ddb87600b76eace9680625c/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/justc/.android/build-cache/ec46c823255d6a5b8ddb87600b76eace9680625c/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/justc/.android/build-cache/ec46c823255d6a5b8ddb87600b76eace9680625c/output/res/layout-v21/notification_action.xml"
+    }
+]

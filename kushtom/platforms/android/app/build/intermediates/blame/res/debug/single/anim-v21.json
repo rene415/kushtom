@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/home/justc/.android/build-cache/a4568a1994f5216d104c87b05efc2217c411ced8/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/home/justc/.android/build-cache/a4568a1994f5216d104c87b05efc2217c411ced8/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    }
+]

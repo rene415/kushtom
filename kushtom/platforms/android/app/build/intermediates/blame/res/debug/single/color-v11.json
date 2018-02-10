@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/justc/.android/build-cache/ec46c823255d6a5b8ddb87600b76eace9680625c/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/home/justc/Desktop/kushtom/kushtom/platforms/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/justc/.android/build-cache/ec46c823255d6a5b8ddb87600b76eace9680625c/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]
