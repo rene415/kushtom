@@ -1,104 +1,70 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <title>Kushtom</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <script> 
-	$(document).ready(function (){
-		$("button").click(function (){
-			$('#1').slideUp();
-		});
-	});
-  </script>
   <body>
-  	<div>
-  		<img class="Splash" src="../../assets/images/Kushtom-Logo.png">
-  	</div>
-  	<!-- Div for the Size Selection -->
-  	<form>
-  	<fieldset>	
-  	<div id="1">
-  		<div>
-  			<h1 id="size-selector">Select Your Size</h1>
-  		</div>
-  		<input type="radio" name="size" value = 1>
-  		<ul style="list-style-type: none">
-  			<li><h2>Slim</h2></li>
-  			<li>0.5g of fire</li>
-  			<li>$8+</li>
-  		</ul><br>
-  	<input type="radio" name="size" value = 2>
-  		<ul style="list-style-type: none">
-  			<li><h2>Regular</h2></li>
-  			<li>1.0g of fire</li>
-  			<li>$8+</li>
-  		</ul>
-  	<input type="radio" name="size" value = 3>
-  		<ul style="list-style-type: none">
-  			<li><h2>King</h2></li>
-  			<li>2g of fire</li>
-  			<li>$8+</li>
-  		</ul>	
-  	</div>
-  	<div class="Flower">
-          <ul>
-              <li>
-				<img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/wgkiostplbq9lkaurt3z.jpg">
-              </li>
-              <li>
-              	<img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/x9opqtluvvbelmoziytf.jpg">
-              </li>
-          	  </li>
-          	  	<img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/d8o6cuy5vfduuleow1ex.jpg">
-          	  </li>
-          	  <li>
-          	  	<img src="">
-          	  </li>
-          	  <li>
-          	  	<img src="">
-          	  </li>
-          	  <li>
-          	  	<img src="">
-          	  </li>
-          	  <li>
-          	  	<img src="">
-          	  </li>
+    <div class="container-fluid">
+      <!--div>
+      <img src="/assets/images/Kushtom-Logo.png" class="img-fluid center-block" alt="Responsive image">
+      </div-->
+      <div class="form-check">
+        <div >
+          <h1 id="size-selector">Select Your Size</h1>
+        </div>
+        <input class="form-check-input" type="radio" name="jsize" id="size-selector" value="option1" checked>
+        <label class="form-check-label" for="size-selector">
+        <ul style="list-style-type: none">
+          <li><h2>Slim</h2></li>
+          <li>0.5g of fire</li>
+          <li>$8+</li>
+      </ul><br>
+        </label>
       </div>
-      <div class="AddOns">
-      	<fieldset>
-      		<legend>Choose your Add Ons!</legend>
-      		<div>
-      			<input type="checkbox" id="hashish" name="hashish" value="hashish">
-    			<label for="">hashish</label>
-         	</div>
-         	<div>
-      			<input type="checkbox" id="hashish" name="hashish" value="hashish">
-    			<label for="">hashish</label>
-         	</div>
-         	<div>
-      			<input type="checkbox" id="hashish" name="hashish" value="hashish">
-    			<label for="">hashish</label>
-         	</div>
-         	<div>
-      			<input type="checkbox" id="hashish" name="hashish" value="hashish">
-    			<label for="">hashish</label>
-         	</div>
-
-         </fieldset>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="jsize" id="size-selector2" value="option2" checked>
+        <label class="form-check-label" for="size-selector2">
+        <ul style="list-style-type: none">
+          <li><h2>Regular</h2></li>
+          <li>1.0g of fire</li>
+          <li>$8+</li>
+      </ul>
+        </label>
       </div>
-      <div class="Quantity">
-          	<legend>Select Quantity</legend>
-          		<input type="radio" name="quantity" value=1> 1<br>
-				<input type="radio" name="quantity" value=3> 3<br>
-				<input type="radio" name="quantity" value=10> 10
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="jsize" id="size-selector3" value="option3" checked>
+        <label class="form-check-label" for="size-selector3">
+        <ul style="list-style-type: none">
+          <li><h2>King</h2></li>
+          <li>2g of fire</li>
+          <li>$8+</li>
+      </ul> 
+        </label>
       </div>
-      <div class="Checkout">
-
-     </div>
-     <input type="submit" value="Submit">
- 	</fieldset>
- 	</form>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/wgkiostplbq9lkaurt3z.jpg">
+          <img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/d8o6cuy5vfduuleow1ex.jpg">
+        </div>
+        <div class="col-xs-6">
+          <img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/x9opqtluvvbelmoziytf.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </div>
   </body>
 </html>
