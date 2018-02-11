@@ -18,12 +18,12 @@
       </div-->
       <div class="form-check">
         <div >
-          <h1 id="size-selector">Select Your Size</h1>
+          <span><h1>Select Your Size</h1></span>
         </div>
         <input class="form-check-input" type="radio" name="jsize" id="size-selector" value="option1" checked>
         <label class="form-check-label" for="size-selector">
         <ul style="list-style-type: none">
-          <li><h2>Slim</h2></li>
+          <li><h2 class="header">Slim</h2></li>
           <li>0.5g of fire</li>
           <li>$8+</li>
       </ul><br>
@@ -33,7 +33,7 @@
         <input class="form-check-input" type="radio" name="jsize" id="size-selector2" value="option2" checked>
         <label class="form-check-label" for="size-selector2">
         <ul style="list-style-type: none">
-          <li><h2>Regular</h2></li>
+          <li><h2 class="header">Regular</h2></li>
           <li>1.0g of fire</li>
           <li>$8+</li>
       </ul>
@@ -43,7 +43,7 @@
         <input class="form-check-input" type="radio" name="jsize" id="size-selector3" value="option3" checked>
         <label class="form-check-label" for="size-selector3">
         <ul style="list-style-type: none">
-          <li><h2>King</h2></li>
+          <li><h2 class="header">King</h2></li>
           <li>2g of fire</li>
           <li>$8+</li>
       </ul> 
@@ -52,51 +52,63 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-6">
-          <img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/wgkiostplbq9lkaurt3z.jpg">
-          <img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/d8o6cuy5vfduuleow1ex.jpg">
-        </div>
-        <div class="col-xs-6">
-          <img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/x9opqtluvvbelmoziytf.jpg">
+          <figure>
+            <button type="button" class="btn btn-outline-dark" id=1 value = "Blackberry Kush"><figcaption>Blackberry Kush</figcaption><img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/wgkiostplbq9lkaurt3z.jpg"></button>
+            
+          </figure>
+          <figure>
+            <button type="button" class="btn btn-outline-dark" id=2 value="Great Success"><figcaption>Great Success</figcaption><img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/d8o6cuy5vfduuleow1ex.jpg"></button>
+          </figure>
+          <figure>
+            <button type="button" class="btn btn-outline-dark" id=3 value="Jack Herer"><figcaption>Jack Herer</figcaption><img src=https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/x9opqtluvvbelmoziytf.jpg></button>
+          </figure>
+            <figure>
+            <button type="button" class="btn btn-outline-dark" id=4 value="Super Lemon Haze"><figcaption>Super Lemon Haze</figcaption><img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/e47x8r1ahlsdxf4djoia.jpg"></button>
+          </figure>
+          <figure>
+            <button type="button" class="btn btn-outline-dark" id=5 value="Sour Kush"><figcaption>Sour Kush</figcaption><img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/go5om2oo2soif4y7hswe.jpg"></button>
+          </figure>
+          <figure>
+            <button type="button" class="btn btn-outline-dark" id=6 value="Ogre Berry"><figcaption>Ogre</figcaption><img src="https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/m8foqao8cvon0fvaqfig.jpg"></button>
+          </figure>
         </div>
       </div>
     </div>
   <div class="form-check">
     <legend>Choose your Add Ons!</legend>
-    <input class="form-check-input" type="checkbox" value="hash" id="addon">
+    <input class="form-check-input" type="checkbox" name="addon" value="hash" id="addon">
       <label class="form-check-label" for="addon">
         Hash
       </label>
   </div>
   <div class="form-check">
-      <input class="form-check-input" type="checkbox" name="addon" id="addon2" value="option1" checked>
+      <input class="form-check-input" type="checkbox" name="addon" id="addon2" value="wax">
       <label class="form-check-label" for="addon2">
         Wax
       </label>
   </div>
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" name="addon" id="addon2" value="option1" checked>
-      <label class="form-check-label" for="addon2">
-        Wax
+      <input class="form-check-input" type="checkbox" name="addon" id="addon3" value="kief">
+      <label class="form-check-label" for="addon3">
+        Kief
       </label>
   </div>
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" name="addon" id="addon2" value="option1" checked>
-      <label class="form-check-label" for="addon2">
-        Wax
+      <input class="form-check-input" type="checkbox" name="addon" id="addon4" value="resin">
+      <label class="form-check-label" for="addon3">
+        Resin
       </label>
   </div>
-    <div class="Quantity">
+    <div class="quantity">
             <legend>Select Quantity</legend>
               <input type="radio" name="quantity" value=1> 1<br>
         <input type="radio" name="quantity" value=3> 3<br>
-        <input type="radio" name="quantity" value=10> 10
+        <input type="radio" name="quantity" value=10> 10<br>
       </div>
       <div class="Checkout">
 
      </div>
      <input type="submit" value="Submit">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

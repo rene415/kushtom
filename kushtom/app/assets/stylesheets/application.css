@@ -25,5 +25,9 @@ h1 {
 	text-align: center;
 }
 
+.header {
+	font-size: 20px;
+}
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
