@@ -1,0 +1,332 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.0
+-- Dumped by pg_dump version 10.0
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: addons; Type: TABLE; Schema: public; Owner: rene
+--
+
+CREATE TABLE addons (
+    id bigint NOT NULL,
+    name character varying,
+    thc double precision,
+    cbd double precision,
+    ucpc character varying,
+    "desc" text,
+    picture character varying,
+    ppg double precision,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL,
+    ish character varying
+);
+
+
+ALTER TABLE addons OWNER TO rene;
+
+--
+-- Name: addons_id_seq; Type: SEQUENCE; Schema: public; Owner: rene
+--
+
+CREATE SEQUENCE addons_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE addons_id_seq OWNER TO rene;
+
+--
+-- Name: addons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rene
+--
+
+ALTER SEQUENCE addons_id_seq OWNED BY addons.id;
+
+
+--
+-- Name: ar_internal_metadata; Type: TABLE; Schema: public; Owner: rene
+--
+
+CREATE TABLE ar_internal_metadata (
+    key character varying NOT NULL,
+    value character varying,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+ALTER TABLE ar_internal_metadata OWNER TO rene;
+
+--
+-- Name: flowers; Type: TABLE; Schema: public; Owner: rene
+--
+
+CREATE TABLE flowers (
+    id bigint NOT NULL,
+    strain character varying,
+    ucpc character varying,
+    "desc" text,
+    thc double precision,
+    picture character varying,
+    ppg double precision,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL,
+    ish character varying,
+    cbd double precision
+);
+
+
+ALTER TABLE flowers OWNER TO rene;
+
+--
+-- Name: flowers_id_seq; Type: SEQUENCE; Schema: public; Owner: rene
+--
+
+CREATE SEQUENCE flowers_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE flowers_id_seq OWNER TO rene;
+
+--
+-- Name: flowers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rene
+--
+
+ALTER SEQUENCE flowers_id_seq OWNED BY flowers.id;
+
+
+--
+-- Name: rolls; Type: TABLE; Schema: public; Owner: rene
+--
+
+CREATE TABLE rolls (
+    id bigint NOT NULL,
+    picture character varying,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL,
+    qty double precision,
+    name character varying
+);
+
+
+ALTER TABLE rolls OWNER TO rene;
+
+--
+-- Name: rolls_id_seq; Type: SEQUENCE; Schema: public; Owner: rene
+--
+
+CREATE SEQUENCE rolls_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE rolls_id_seq OWNER TO rene;
+
+--
+-- Name: rolls_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rene
+--
+
+ALTER SEQUENCE rolls_id_seq OWNED BY rolls.id;
+
+
+--
+-- Name: schema_migrations; Type: TABLE; Schema: public; Owner: rene
+--
+
+CREATE TABLE schema_migrations (
+    version character varying NOT NULL
+);
+
+
+ALTER TABLE schema_migrations OWNER TO rene;
+
+--
+-- Name: addons id; Type: DEFAULT; Schema: public; Owner: rene
+--
+
+ALTER TABLE ONLY addons ALTER COLUMN id SET DEFAULT nextval('addons_id_seq'::regclass);
+
+
+--
+-- Name: flowers id; Type: DEFAULT; Schema: public; Owner: rene
+--
+
+ALTER TABLE ONLY flowers ALTER COLUMN id SET DEFAULT nextval('flowers_id_seq'::regclass);
+
+
+--
+-- Name: rolls id; Type: DEFAULT; Schema: public; Owner: rene
+--
+
+ALTER TABLE ONLY rolls ALTER COLUMN id SET DEFAULT nextval('rolls_id_seq'::regclass);
+
+
+--
+-- Data for Name: addons; Type: TABLE DATA; Schema: public; Owner: rene
+--
+
+COPY addons (id, name, thc, cbd, ucpc, "desc", picture, ppg, created_at, updated_at, ish) FROM stdin;
+1	Blueberry Muffin Hash - Fire King	\N	\N	\N	\N	https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/t9l7qqk9ma2yx3rp7bxr.jpg	41	2018-02-11 03:39:26.917495	2018-02-11 03:39:26.917495	Hybrid Indica
+2	Jack Herer Kief	\N	\N	\N	\N	https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/wg4ysuujneurb3ie3gmt.jpg	25	2018-02-11 03:41:48.097915	2018-02-11 03:41:48.097915	Sativa
+3	Kush Nectar - Erba Nostra	\N	\N	\N	\N	https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/jfijyzvzrdhirqscopry.jpg	49	2018-02-11 03:44:05.538559	2018-02-11 03:44:05.538559	Hybrid Indica
+4	GG #4 Raw Zen Rosin	\N	\N	\N	\N	https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/luitpmjnwtrzuqrlxosd.jpg	49	2018-02-11 03:45:36.922984	2018-02-11 03:45:36.922984	Hybrid Sativa
+5	Kosher Kush Wax	\N	\N	\N	\N	https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/ptgaujiiw2gu5vjuvjqa.jpg	61	2018-02-11 03:48:01.59465	2018-02-11 03:48:01.59465	Hybrid Indica
+\.
+
+
+--
+-- Data for Name: ar_internal_metadata; Type: TABLE DATA; Schema: public; Owner: rene
+--
+
+COPY ar_internal_metadata (key, value, created_at, updated_at) FROM stdin;
+environment	development	2018-02-10 23:11:25.090954	2018-02-10 23:11:25.090954
+\.
+
+
+--
+-- Data for Name: flowers; Type: TABLE DATA; Schema: public; Owner: rene
+--
+
+COPY flowers (id, strain, ucpc, "desc", thc, picture, ppg, created_at, updated_at, ish, cbd) FROM stdin;
+1	Blackberry Kush	\N	A cross between Blueberry Kush and Afghani, frosty flowers with purple undertones and a sweet kushy aroma.  These crystalline gems are excellent for releasing stress ad quieting the mind and body.	15.5999999999999996	https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/wgkiostplbq9lkaurt3z.jpg	20	2018-02-11 03:00:00.413827	2018-02-11 03:09:50.285411	Blackberry Kush	0.100000000000000006
+2	Jack Herer	\N	A blend of Haze with Shiva Skunk and Northern Lights #5.  Evergreen buds with coppery red hairs and a sweet syrupy aroma of evergreen and lime.  Expect a clear, energizing buzz that is perfect for getting work done and well suited for social situations.	18	https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/x9opqtluvvbelmoziytf.jpg	20	2018-02-11 03:12:14.603986	2018-02-11 03:12:14.603986	Sativa	0.100000000000000006
+3	Great Success	\N	A cross between Ogre Berry & OG Strawberry.  This berrylicious flower will provide a blissfully euphoric effect.  Perfect for an evening out and about or a day relaxing around the house.	24.3000000000000007	https://res.cloudinary.com/meadow/image/upload/c_fill,f_auto,h_640,q_80,w_640/d8o6cuy5vfduuleow1ex.jpg	14	2018-02-11 03:14:44.986707	2018-02-11 03:14:44.986707	Hybrid	0.100000000000000006
+\.
+
+
+--
+-- Data for Name: rolls; Type: TABLE DATA; Schema: public; Owner: rene
+--
+
+COPY rolls (id, picture, created_at, updated_at, qty, name) FROM stdin;
+1	\N	2018-02-11 03:20:46.132221	2018-02-11 03:25:49.076111	0.699999999999999956	Slim
+2	\N	2018-02-11 03:21:11.714417	2018-02-11 03:26:25.687909	1	Regular
+3	\N	2018-02-11 03:27:15.154358	2018-02-11 03:27:15.154358	2	King
+\.
+
+
+--
+-- Data for Name: schema_migrations; Type: TABLE DATA; Schema: public; Owner: rene
+--
+
+COPY schema_migrations (version) FROM stdin;
+20180211024842
+20180211025157
+20180211025229
+20180211030344
+20180211030546
+20180211030847
+20180211031831
+20180211031856
+20180211032251
+20180211032325
+20180211032409
+20180211032431
+\.
+
+
+--
+-- Name: addons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: rene
+--
+
+SELECT pg_catalog.setval('addons_id_seq', 5, true);
+
+
+--
+-- Name: flowers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: rene
+--
+
+SELECT pg_catalog.setval('flowers_id_seq', 3, true);
+
+
+--
+-- Name: rolls_id_seq; Type: SEQUENCE SET; Schema: public; Owner: rene
+--
+
+SELECT pg_catalog.setval('rolls_id_seq', 3, true);
+
+
+--
+-- Name: addons addons_pkey; Type: CONSTRAINT; Schema: public; Owner: rene
+--
+
+ALTER TABLE ONLY addons
+    ADD CONSTRAINT addons_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: ar_internal_metadata ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: rene
+--
+
+ALTER TABLE ONLY ar_internal_metadata
+    ADD CONSTRAINT ar_internal_metadata_pkey PRIMARY KEY (key);
+
+
+--
+-- Name: flowers flowers_pkey; Type: CONSTRAINT; Schema: public; Owner: rene
+--
+
+ALTER TABLE ONLY flowers
+    ADD CONSTRAINT flowers_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: rolls rolls_pkey; Type: CONSTRAINT; Schema: public; Owner: rene
+--
+
+ALTER TABLE ONLY rolls
+    ADD CONSTRAINT rolls_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: schema_migrations schema_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: rene
+--
+
+ALTER TABLE ONLY schema_migrations
+    ADD CONSTRAINT schema_migrations_pkey PRIMARY KEY (version);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
